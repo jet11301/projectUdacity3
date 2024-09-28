@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: huyng5configmap
+data:
+  DB_USERNAME: "postgresql"
+  DB_NAME: "postgres"
+  DB_HOST: "my-postgres-postgresql"
+  DB_PORT: "5432"
