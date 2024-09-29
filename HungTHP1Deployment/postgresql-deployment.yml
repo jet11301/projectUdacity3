@@ -18,7 +18,7 @@ spec:
         - name: POSTGRES_DB
           value: postgres
         - name: POSTGRES_USER
-          value: postgresql
+          value: postgres
         - name: POSTGRES_PASSWORD
           value: ItcGFzc3dvbXktZGcmQ=
         ports:
@@ -29,4 +29,4 @@ spec:
       volumes:
       - name: postgresql-storage
         persistentVolumeClaim:
-          claimName: postgresql-pvc
+          claimName: my-pvc

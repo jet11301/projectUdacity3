@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: hungthp1-api
-        image: 
+        image: 579273112224.dkr.ecr.us-east-1.amazonaws.com/udacitypr3:latest
         imagePullPolicy: Always
         livenessProbe:
           httpGet:

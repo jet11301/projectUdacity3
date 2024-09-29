@@ -22,7 +22,7 @@ step3: Apply YAML configurations
 kubectl apply -f HungTHP1Deployment/configmap.yml
 kubectl apply -f HungTHP1Deployment/postgresql-deployment.yml
 kubectl apply -f HungTHP1Deployment/postgresql-service.yml
-kubectl apply -f HungTHP1Deployment/project3-api.yml
+kubectl apply -f HungTHP1Deployment/hungthp1-api.yml
 kubectl apply -f HungTHP1Deployment/pv.yml
 kubectl apply -f HungTHP1Deployment/pvc.yml
 kubectl apply -f HungTHP1Deployment/secrets.yml
@@ -33,10 +33,10 @@ kubectl get pods
 
 
 step 5:
-kubectl exec -it "chuaco" -- bash
+kubectl exec -it postgresql-68b8f596cc-fk7ck -- bash
 
 step 6: 
-psql -U postgresql -d postgres
+psql -U postgres -d postgres
 psql -U postgres -d postgres -h 127.0.0.1 -a -f db/1_create_tables.sql
 psql -U postgres -d postgres -h 127.0.0.1 -a -f db/2_seed_users.sql
 psql -U postgres -d postgres -h 127.0.0.1 -a -f db/3_seed_tokens.sql
